@@ -2,6 +2,8 @@
   "name": "task-manager",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://saicharanjanagama.github.io/Task-Manager-week7",
+
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.0",
     "@testing-library/dom": "^10.4.1",
