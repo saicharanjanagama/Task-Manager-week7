@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
+import TaskInput from './components/TaskInput';
+import TaskList from './components/TaskList';
+import Filter from './components/Filter';
 
 function App() {
+  const [filter, setFilter] = useState("all");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <h1 style={{ marginBottom: "20px"}}>Task Manager</h1>
+        <Filter setFilter={setFilter} /> {/* This allows the Filter component to tell App.js which filter is selected. */}
+        <TaskInput />
+        <TaskList filter={filter} />
+      </div>
+    </>
   );
 }
 
