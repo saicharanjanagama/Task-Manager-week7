@@ -3,6 +3,7 @@
 <p align="center"> 
   <img src="https://img.shields.io/badge/Frontend-React%20JS-blue?style=for-the-badge" /> 
   <img src="https://img.shields.io/badge/State-Redux%20Toolkit-yellow?style=for-the-badge" /> 
+  <img src="https://img.shields.io/badge/Storage-LocalStorage-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Internship-Developers%20Arena-green?style=for-the-badge" /> 
 </p> 
 
@@ -51,6 +52,43 @@
   *(CSS-in-JS for dynamic styling)*  
 - **LocalStorage API**  
   *(Optional persistence of tasks in browser)*  
+
+---
+
+## 🧠 How the App Works
+
+1. User adds a new task using the input field
+2. Task is stored in Redux state
+3. Task data is synced with LocalStorage
+4. User can:
+   - ✏️ Edit task
+   - ✅ Mark task as completed
+   - 🗑️ Delete task
+5. Filters allow viewing tasks by status
+6. UI updates instantly via Redux store
+
+---
+
+## 📂 Project Structure
+
+Task-Manager-week7/
+│── public/<br>
+│── src/<br>
+│   ├── app/<br>
+│   │   └── store.js<br>
+│   ├── components/<br>
+│   │   ├── Filter.js<br>
+│   │   ├── TaskInput.js<br>
+│   │   ├── TaskList.js<br>
+│   │   └── TaskItem.js<br>
+│   ├── features/<br>
+│   │   └── task/<br>
+│   │       └── taskSlice.js<br>
+│   ├── App.css<br>
+│   ├── App.js<br>
+│   ├── index.css<br>
+│   └── index.js<br>
+│── README.md
 
 ---
 
