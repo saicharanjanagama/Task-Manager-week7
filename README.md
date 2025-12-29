@@ -71,7 +71,7 @@
 
 ## 📂 Project Structure
 
-Task-Manager-week7/
+Task-Manager-week7/<br>
 │── public/<br>
 │── src/<br>
 │   ├── app/<br>
